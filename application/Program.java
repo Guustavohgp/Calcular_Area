@@ -31,6 +31,8 @@ public class Program {
                     
                 break;
                 case "qua":
+                System.out.println("Lado:");
+                double lado = sc.nextDouble();
                     
                 break;
                 case "tri":
