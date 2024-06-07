@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 import Calcular_Area.entities.Circulo;
 import Calcular_Area.entities.Formas;
+import Calcular_Area.entities.Quadrado;
 import Calcular_Area.entities.Retangulo;
 
 public class Program {
@@ -43,6 +44,7 @@ public class Program {
                 case "qua":
                 System.out.println("Lado: ");
                 double ladoQua = sc.nextDouble();
+                list.add(new Quadrado(ladoQua));
                     
                 break;
                 case "tri":
