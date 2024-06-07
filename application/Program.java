@@ -9,6 +9,7 @@ import Calcular_Area.entities.Circulo;
 import Calcular_Area.entities.Formas;
 import Calcular_Area.entities.Quadrado;
 import Calcular_Area.entities.Retangulo;
+import Calcular_Area.entities.Trapezio;
 import Calcular_Area.entities.Triangulo;
 
 public class Program {
@@ -63,6 +64,7 @@ public class Program {
                 double baseMenorTra = sc.nextDouble();
                 System.out.println("Altura: ");
                 double alturaTra = sc.nextDouble();  
+                list.add(new Trapezio(baseMaiorTra, baseMenorTra, alturaTra));
                 break;
             
                 default:
