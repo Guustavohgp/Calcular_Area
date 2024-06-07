@@ -71,9 +71,20 @@ public class Program {
                 System.out.println("Forma inválida");
                     break;
             }
-
-        }
-
-    }
+        
+        }   
+        System.out.println();
+        System.out.println("Area: ");
+        for (Formas forma: list){
+            System.out.println(String.format ("%.2f", forma.area()));
+        }   
+        sc.close();
     
 }
+}
+    
+
+
+
+
+    
