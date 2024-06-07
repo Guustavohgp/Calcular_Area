@@ -21,7 +21,7 @@ public class Program {
 
         System.out.print("Digite o número de formas:");
         int n = sc.nextInt();
-        sc.nextInt();
+        sc.nextLine();
 
         for (int i=1; i<=n; i++) {
             System.out.println("Forma #" + i + ":");
