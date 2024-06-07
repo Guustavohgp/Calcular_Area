@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-
 import Calcular_Area.entities.Circulo;
 import Calcular_Area.entities.Formas;
 import Calcular_Area.entities.Quadrado;
@@ -81,7 +80,6 @@ public class Program {
                 System.out.println("Forma inválida");
                     break;
             }
-        
         }   
         System.out.println();
         System.out.println("Area: ");
@@ -89,8 +87,7 @@ public class Program {
             System.out.println(String.format ("%.2f", forma.area()));
         }   
         sc.close();
-    
-}
+    }
 }
     
 
