@@ -1,12 +1,18 @@
 package Calcular_Area.application;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
+
+import Calcular_Area.entities.Formas;
 
 public class Program {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner (System.in);
+
+        List<Formas> list = new ArrayList<>();
 
         System.out.println("Digite o número de formas: ");
         int n = sc.nextInt();
@@ -22,7 +28,7 @@ public class Program {
                 System.out.println("Raio: ");
                 double raioCir = sc.nextDouble();  
                 break;
-                
+
                 case "ret":
                 System.out.println("Altura: ");
                 double alturaRet = sc.nextDouble();
