@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 import Calcular_Area.entities.Circulo;
 import Calcular_Area.entities.Formas;
+import Calcular_Area.entities.Retangulo;
 
 public class Program {
     public static void main(String[] args) {
@@ -35,7 +36,8 @@ public class Program {
                 System.out.println("Altura: ");
                 double alturaRet = sc.nextDouble();
                 System.out.println("Largura: ");
-                double larguraRet = sc.nextDouble();   
+                double larguraRet = sc.nextDouble(); 
+                list.add(new Retangulo(alturaRet, larguraRet));  
                 break;
 
                 case "qua":
