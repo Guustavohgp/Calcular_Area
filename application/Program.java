@@ -19,7 +19,7 @@ public class Program {
 
         List<Formas> list = new ArrayList<>();
 
-        System.out.print("Digite o número de formas");
+        System.out.print("Digite o número de formas:");
         int n = sc.nextInt();
 
         for (int i=1; i<=n; i++) {
