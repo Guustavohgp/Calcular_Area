@@ -20,16 +20,16 @@ public class Program {
             switch (sigla) {
                 case "cir":
                 System.out.println("Raio: ");
-                double raioCir = sc.nextDouble();
-                    
+                double raioCir = sc.nextDouble();  
                 break;
+                
                 case "ret":
                 System.out.println("Altura: ");
                 double alturaRet = sc.nextDouble();
                 System.out.println("Largura: ");
-                double larguraRet = sc.nextDouble();
-                    
+                double larguraRet = sc.nextDouble();   
                 break;
+
                 case "qua":
                 System.out.println("Lado: ");
                 double ladoQua = sc.nextDouble();
@@ -40,10 +40,15 @@ public class Program {
                 double alturaTri = sc.nextDouble();
                 System.out.println("Largura: ");
                 double larguraTri = sc.nextDouble();
-
                 break;
+
                 case "tra":
-                    
+                System.out.println("Base maior:" );
+                double baseMaiorTra = sc.nextDouble();
+                System.out.println("Base menor: ");
+                double baseMenorTra = sc.nextDouble();
+                System.out.println("Altura: ");
+                double alturaTra = sc.nextDouble();  
                 break;
             
                 default:
