@@ -1,5 +1,9 @@
 package Calcular_Area.entities;
 
-public class Formas {
-    
+public abstract class Formas {
+
+    public Formas() {
+    }
+
+    public abstract double area();
 }
