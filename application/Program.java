@@ -24,6 +24,10 @@ public class Program {
                     
                 break;
                 case "ret":
+                System.out.println("Altura:");
+                double altura = sc.nextDouble();
+                System.out.println("Largura:");
+                double largura = sc.nextDouble();
                     
                 break;
                 case "qua":
