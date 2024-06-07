@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
+import Calcular_Area.entities.Circulo;
 import Calcular_Area.entities.Formas;
 
 public class Program {
@@ -27,6 +28,7 @@ public class Program {
                 case "cir":
                 System.out.println("Raio: ");
                 double raioCir = sc.nextDouble();  
+                list.add(new Circulo(raioCir));
                 break;
 
                 case "ret":
