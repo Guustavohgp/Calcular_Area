@@ -1,15 +1,17 @@
-package Calcular_Area.application;
+package application;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-import Calcular_Area.entities.Circulo;
-import Calcular_Area.entities.Formas;
-import Calcular_Area.entities.Quadrado;
-import Calcular_Area.entities.Retangulo;
-import Calcular_Area.entities.Trapezio;
-import Calcular_Area.entities.Triangulo;
+
+import entities.Circulo;
+import entities.Formas;
+import entities.Quadrado;
+import entities.Retangulo;
+import entities.Trapezio;
+import entities.Triangulo;
+
 
 public class Program {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Calcular_Area.entities;
+package entities;
 
 public class Triangulo extends Formas {
     private Double altura;

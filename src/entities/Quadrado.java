@@ -1,4 +1,4 @@
-package Calcular_Area.entities;
+package entities;
 
 public class Quadrado extends Formas{
     private Double lado;
