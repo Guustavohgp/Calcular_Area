@@ -68,9 +68,12 @@ public class Program {
                 break;
             
                 default:
+                System.out.println("Forma inválida");
                     break;
             }
+
         }
+
     }
     
 }
