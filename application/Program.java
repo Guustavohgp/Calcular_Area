@@ -14,29 +14,33 @@ public class Program {
         for (int i=1; i<=n; i++) {
             System.out.println("Forma #" + i + ":");
             System.out.println("Escolha a forma");
-            System.out.print("Círculo (cir), Retângulo (ret), Quadrado (qua), Triângulo (tri) e Trapézio (tra)");
+            System.out.print("Círculo (cir), Retângulo (ret), Quadrado (qua), Triângulo Equiláteo (tri) e Trapézio (tra)");
             String sigla = sc.nextLine();
             
             switch (sigla) {
                 case "cir":
-                System.out.println("Raio:");
-                double raio = sc.nextDouble();
+                System.out.println("Raio: ");
+                double raioCir = sc.nextDouble();
                     
                 break;
                 case "ret":
-                System.out.println("Altura:");
-                double altura = sc.nextDouble();
-                System.out.println("Largura:");
-                double largura = sc.nextDouble();
+                System.out.println("Altura: ");
+                double alturaRet = sc.nextDouble();
+                System.out.println("Largura: ");
+                double larguraRet = sc.nextDouble();
                     
                 break;
                 case "qua":
-                System.out.println("Lado:");
-                double lado = sc.nextDouble();
+                System.out.println("Lado: ");
+                double ladoQua = sc.nextDouble();
                     
                 break;
                 case "tri":
-                    
+                System.out.println("Altura: ");
+                double alturaTri = sc.nextDouble();
+                System.out.println("Largura: ");
+                double larguraTri = sc.nextDouble();
+
                 break;
                 case "tra":
                     
