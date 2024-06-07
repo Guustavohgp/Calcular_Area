@@ -26,45 +26,54 @@ public class Program {
         for (int i=1; i<=n; i++) {
             System.out.println("Forma #" + i + ":");
             System.out.println("Escolha a forma");
-            System.out.print("Círculo (cir), Retângulo (ret), Quadrado (qua), Triângulo Equiláteo (tri) e Trapézio (tra)");
+            System.out.print("Círculo (cir), Retângulo (ret), Quadrado (qua), Triângulo Equiláteo (tri) e Trapézio (tra): ");
             String sigla = sc.nextLine();
             
             switch (sigla) {
                 case "cir":
                 System.out.println("Raio: ");
-                double raioCir = sc.nextDouble();  
+                double raioCir = sc.nextDouble();
+                sc.nextLine();  
                 list.add(new Circulo(raioCir));
                 break;
 
                 case "ret":
                 System.out.println("Altura: ");
                 double alturaRet = sc.nextDouble();
+                sc.nextLine(); 
                 System.out.println("Largura: ");
                 double larguraRet = sc.nextDouble(); 
+                sc.nextLine(); 
                 list.add(new Retangulo(alturaRet, larguraRet));  
                 break;
 
                 case "qua":
                 System.out.println("Lado: ");
                 double ladoQua = sc.nextDouble();
-                list.add(new Quadrado(ladoQua));
-                    
+                sc.nextLine(); 
+                list.add(new Quadrado(ladoQua));   
                 break;
+
                 case "tri":
                 System.out.println("Altura: ");
                 double alturaTri = sc.nextDouble();
+                sc.nextLine(); 
                 System.out.println("Largura: ");
                 double larguraTri = sc.nextDouble();
+                sc.nextLine(); 
                 list.add(new Triangulo(alturaTri, larguraTri));
                 break;
 
                 case "tra":
                 System.out.println("Base maior:" );
                 double baseMaiorTra = sc.nextDouble();
+                sc.nextLine(); 
                 System.out.println("Base menor: ");
                 double baseMenorTra = sc.nextDouble();
+                sc.nextLine(); 
                 System.out.println("Altura: ");
                 double alturaTra = sc.nextDouble();  
+                sc.nextLine(); 
                 list.add(new Trapezio(baseMaiorTra, baseMenorTra, alturaTra));
                 break;
             
