@@ -9,6 +9,7 @@ import Calcular_Area.entities.Circulo;
 import Calcular_Area.entities.Formas;
 import Calcular_Area.entities.Quadrado;
 import Calcular_Area.entities.Retangulo;
+import Calcular_Area.entities.Triangulo;
 
 public class Program {
     public static void main(String[] args) {
@@ -52,6 +53,7 @@ public class Program {
                 double alturaTri = sc.nextDouble();
                 System.out.println("Largura: ");
                 double larguraTri = sc.nextDouble();
+                list.add(new Triangulo(alturaTri, larguraTri));
                 break;
 
                 case "tra":
