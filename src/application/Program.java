@@ -27,7 +27,7 @@ public class Program {
             System.out.print("Círculo (cir), Retângulo (ret), Quadrado (qua), Triângulo Equiláteo (tri) e Trapézio (tra): ");
             String sigla = sc.nextLine();
             
-            switch (sigla) {
+                switch (sigla) {
                 case "cir":
                 System.out.println("Raio: ");
                 double raioCir = sc.nextDouble();
@@ -74,21 +74,24 @@ public class Program {
                 sc.nextLine(); 
                 list.add(new Trapezio(baseMaiorTra, baseMenorTra, alturaTra));
                 break;
-            
+                
                 default:
-                System.out.println("Forma inválida");
-                break;
+                if (sigla != "cir" && sigla != "ret" && sigla != "qua" &&  sigla != "tri" &&  sigla != "tra") {
+                    System.out.println("Forma inválida");
+                    return;
+                }
             }
-        }   
+        }  
+        sc.close(); 
+
         System.out.println();
         System.out.println("Area: ");
         for (Formas forma: list){
             System.out.println(String.format ("%.2f", forma.area()));
         }   
-        sc.close();
     }
-}
-    
+} 
+
 
 
 
