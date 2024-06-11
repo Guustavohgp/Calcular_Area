@@ -33,6 +33,9 @@ public class Triangulo extends Formas {
     public double area() {
        return (largura * altura) /2 ;
     }
-
+    @Override
+    public String toString() {
+        return "Triangulo [Area=" + area() + "]";
+    }
     
 }
