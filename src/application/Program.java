@@ -5,13 +5,8 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-import entities.Circulo;
 import entities.CreateFormas;
 import entities.Formas;
-import entities.Quadrado;
-import entities.Retangulo;
-import entities.Trapezio;
-import entities.Triangulo;
 
 public class Program {
     public static void main(String[] args) {
