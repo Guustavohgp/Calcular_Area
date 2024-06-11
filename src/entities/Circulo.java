@@ -23,4 +23,8 @@ public class Circulo extends Formas{
     public double area() {
         return Math.PI * raio *raio;
     }  
+    @Override
+    public String toString() {
+        return "Círculo [raio=" + raio + "]";
+    }
 }
