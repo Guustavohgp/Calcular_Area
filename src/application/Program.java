@@ -34,8 +34,8 @@ public class Program {
 
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Tente novamente.");
-                sc.nextLine(); // Limpa o buffer
-                i--; // Decrementa o contador para repetir a entrada desta forma
+                i--;
+                continue;
             }
         }
 
