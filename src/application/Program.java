@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 import entities.Circulo;
+import entities.CreateFormas;
 import entities.Formas;
 import entities.Quadrado;
 import entities.Retangulo;
@@ -18,23 +19,34 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         List<Formas> list = new ArrayList<>();
 
-        try {
-            System.out.print("Digite o número de formas: ");
-            int n = sc.nextInt();
-            sc.nextLine();
+        System.out.print("Digite o número de formas: ");
+        int n = sc.nextInt();
+        sc.nextLine();
 
-            for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
+            try {
                 System.out.println("Forma #" + i + ":");
-                System.out.println("Escolha a forma");
-                System.out.print("Círculo (cir), Retângulo (ret), Quadrado (qua), Triângulo Equilátero (tri) e Trapézio (tra): ");
+                System.out.print("Escolha a forma (cir, ret, qua, tri, tra): ");
                 String sigla = sc.nextLine();
 
-                
+                Formas forma = CreateFormas.createForma(sigla, sc);
+                list.add(forma);
+
+            } catch (InputMismatchException e) {
+                System.out.println("Entrada inválida. Tente novamente.");
+                sc.nextLine(); // Limpa o buffer
+                i--; // Decrementa o contador para repetir a entrada desta forma
+            }
+        }
+
+        sc.close();
 
         System.out.println();
         System.out.println("Área das Formas:");
+        int formaNumero = 1;
         for (Formas forma : list) {
-            System.out.println(String.format("%.2f", forma.area()));
+            System.out.println("Forma #" + formaNumero + ": " + forma.toString() + " - Área: " + String.format("%.2f", forma.area()));
+            formaNumero++;
         }
     }
 }
