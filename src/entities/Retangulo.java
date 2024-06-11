@@ -34,5 +34,8 @@ public class Retangulo extends Formas {
     public double area() {
         return largura * altura;
     }
-    
+    @Override
+    public String toString() {
+        return "Retangulo [Area=" + area() + "]";
+    }
 }
