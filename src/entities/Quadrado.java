@@ -23,4 +23,8 @@ public class Quadrado extends Formas{
     public double area() {
         return lado*lado;
     }   
+    @Override
+    public String toString() {
+        return "Quadrado [Area=" + area() + "]";
+    }
 }
