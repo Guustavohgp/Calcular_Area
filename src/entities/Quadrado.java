@@ -25,6 +25,6 @@ public class Quadrado extends Formas{
     }   
     @Override
     public String toString() {
-        return "Quadrado [Area = " + area() + "]";
+        return "Quadrado [Área = " + String.format("%.2f", area()) + "]";
     }
 }

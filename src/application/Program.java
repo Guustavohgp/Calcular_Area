@@ -19,9 +19,24 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         List<Formas> list = new ArrayList<>();
 
-        System.out.print("Digite o número de formas: ");
-        int n = sc.nextInt();
-        sc.nextLine();
+        int n = 0;
+        
+        // Solicitar o número de formas com tratamento de exceção
+        while (true) {
+            try {
+                System.out.print("Digite o número de formas: ");
+                n = sc.nextInt();
+                sc.nextLine(); // Limpar o buffer
+                if (n <= 0) {
+                    System.out.println("O número de formas deve ser positivo. Tente novamente.");
+                    continue;
+                }
+                break; 
+            } catch (InputMismatchException e) {
+                System.out.println("Valor inválido, insira um número inteiro.");
+                sc.nextLine(); 
+            }
+        }
 
         for (int i = 1; i <= n; i++) {
             try {
@@ -33,7 +48,7 @@ public class Program {
                 list.add(forma);
 
             } catch (InputMismatchException e) {
-                System.out.println("Entrada inválida. Tente novamente.");
+                System.out.println("Forma inválida. Tente novamente.");
                 i--;
                 continue;
             }
@@ -44,7 +59,7 @@ public class Program {
         System.out.println("Área das Formas:");
         int formaNumero = 1;
         for (Formas forma : list) {
-            System.out.println("Forma #" + formaNumero + ": " + String.format("%.2f",forma.toString()));
+            System.out.println("Forma #" + formaNumero + ": " + forma.toString());
             formaNumero++;
         }
     }

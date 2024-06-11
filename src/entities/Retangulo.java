@@ -36,6 +36,6 @@ public class Retangulo extends Formas {
     }
     @Override
     public String toString() {
-        return "Retangulo [Area = " + area() + "]";
+        return "Retangulo [Área = " + String.format("%.2f", area()) + "]";
     }
 }
