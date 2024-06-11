@@ -45,7 +45,7 @@ public class Program {
         System.out.println("Área das Formas:");
         int formaNumero = 1;
         for (Formas forma : list) {
-            System.out.println("Forma #" + formaNumero + ": " + forma.toString() + " - Área: " + String.format("%.2f", forma.area()));
+            System.out.println("Forma #" + formaNumero + ": " + String.format("%.2f",forma.toString()));
             formaNumero++;
         }
     }

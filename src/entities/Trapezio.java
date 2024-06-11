@@ -46,7 +46,7 @@ public class Trapezio extends Formas {
     }
     @Override
     public String toString() {
-        return "Trapézio [Area=" + area() + "]";
+        return "Trapézio [Area = " + area() + "]";
     }
 
 }

@@ -25,6 +25,6 @@ public class Circulo extends Formas{
     }  
     @Override
     public String toString() {
-        return "Círculo [Area=" + area() + "]";
+        return "Círculo [Area = " + area() + "]";
     }
 }
