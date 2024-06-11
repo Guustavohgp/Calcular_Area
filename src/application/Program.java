@@ -79,7 +79,8 @@ public class Program {
 
                     default:
                         System.out.println("Forma inválida");
-                        return;
+                        i--;
+                        continue;
                 }
             }
         } catch (InputMismatchException e) {
