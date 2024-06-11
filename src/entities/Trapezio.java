@@ -44,5 +44,9 @@ public class Trapezio extends Formas {
     public double area() {
     return (basemaior+basemenor)*altura /2 ;
     }
+    @Override
+    public String toString() {
+        return "Trapézio [Area=" + area() + "]";
+    }
 
 }
