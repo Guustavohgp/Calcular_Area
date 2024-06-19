@@ -38,16 +38,16 @@ public class Program {
             }
         }
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++) { // loop para ler as formas
             try {
                 System.out.println("Forma #" + i + ":");
                 System.out.print("Escolha a forma (cir, ret, qua, tri, tra): ");
                 String sigla = sc.nextLine();
 
                 Formas forma = CreateFormas.createForma(sigla, sc);
-                list.add(forma);
+                list.add(forma); // adicionando forma a uma lista
 
-            } catch (InputMismatchException e) {
+            } catch (InputMismatchException e) { 
                 System.out.println("Forma inválida. Tente novamente.");
                 i--;
                 continue;
@@ -58,7 +58,7 @@ public class Program {
         System.out.println();
         System.out.println("Área das Formas:");
         int formaNumero = 1;
-        for (Formas forma : list) {
+        for (Formas forma : list) { 
             System.out.println("Forma #" + formaNumero + ": " + forma.toString());
             formaNumero++;
         }
