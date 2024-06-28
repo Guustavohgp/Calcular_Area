@@ -1,4 +1,4 @@
-package entities;
+package Calcular_Area.src.entities;
 
 public abstract class Formas {
     public Formas() {

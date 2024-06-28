@@ -1,4 +1,4 @@
-package entities;
+package Calcular_Area.src.entities;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

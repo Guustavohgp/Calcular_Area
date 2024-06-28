@@ -1,17 +1,22 @@
-package application;
+package Calcular_Area.src.application;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-import entities.Circulo;
-import entities.CreateFormas;
-import entities.Formas;
-import entities.Quadrado;
-import entities.Retangulo;
-import entities.Trapezio;
-import entities.Triangulo;
+
+import Calcular_Area.src.entities.CreateFormas;
+import Calcular_Area.src.entities.Formas;
+import Calcular_Area.src.entities.Circulo;
+import Calcular_Area.src.entities.Quadrado;
+import Calcular_Area.src.entities.Retangulo;
+import Calcular_Area.src.entities.Triangulo;
+import Calcular_Area.src.entities.Trapezio;
+import Calcular_Area.src.entities.Formas;
+import Calcular_Area.src.entities.CreateFormas;
+
+
 
 public class Program {
     public static void main(String[] args) {
